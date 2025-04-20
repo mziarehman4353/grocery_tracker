@@ -1,0 +1,41 @@
+name: grocery_tracker
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # 🧾 Image picker for receipts
+  image_picker: ^1.1.2
+
+  # 📦 Shared Preferences for saving data locally
+  shared_preferences: ^2.2.2
+
+  # 📄 PDF and Printing
+  pdf: ^3.11.3
+  printing: ^5.14.2
+
+  # 🗂 Path provider for file storage
+  path_provider: ^2.0.15
+
+  # 🛡️ Permission handler for accessing device permissions
+  permission_handler: ^11.0.0
+
+  # 🌐 Support for web download
+  universal_html: ^2.2.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
