@@ -20,10 +20,9 @@ android {
     }
 
     defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.grocery_tracker"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
+        // ✅ Kotlin DSL fix (use `=`)
+        applicationId = "com.mycompany.grocery_tracker"
+
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
@@ -42,3 +41,6 @@ android {
 flutter {
     source = "../.."
 }
+
+// Apply Google services plugin at the bottom
+apply plugin: 'com.google.gms.google-services'

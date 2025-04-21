@@ -1,6 +1,6 @@
 allprojects {
     repositories {
-        google()
+        google()  // Ensure this is present
         mavenCentral()
     }
 }
@@ -18,4 +18,17 @@ subprojects {
 
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
+}
+
+// Add the following classpath for Firebase
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        // Firebase services classpath
+        classpath("com.google.gms:google-services:4.4.0")  // or the latest version
+    }
 }
